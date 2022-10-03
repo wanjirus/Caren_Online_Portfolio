@@ -1,6 +1,7 @@
 import './style.css';
-import * as THREE from "three";
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+
+import * as THREE from "https://cdn.skypack.dev/three@0.132.2";
+import { OrbitControls } from 'https://cdn.skypack.dev/three@0.132.2/examples/jsm/controls/OrbitControls.js';
 
 const scene = new THREE.Scene();
 
@@ -17,7 +18,7 @@ camera.position.setZ(30);
 renderer.render( scene, camera)
 
 const geometry = new THREE.TorusGeometry( 10, 3, 16, 100 )
-const material = new THREE.MeshStandardMaterial( { color: 0x744965, wireframe:true} );
+const material = new THREE.MeshStandardMaterial( { color: 0x74496, wireframe:true} );
 const torus = new THREE.Mesh( geometry, material );
 scene.add(torus)
 
