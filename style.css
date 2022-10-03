@@ -11,7 +11,7 @@ canvas {
 
 :root {
   --dark-bg:linear-gradient(100.97deg, rgba(245, 0, 225, 0.329) 1.84%, rgba(0, 81, 255, 0.336) 102.67%); ;
-  --spacing: 200px;
+  --spacing: 230px;
 --color-bg: rgb(66, 233, 16);
 --gradient-footer: linear-gradient(100.97deg, rgba(247, 1, 226, 0.26) 1.84%, rgba(0, 0, 0, 0.624) 102.67%); 
 --gradient-text: linear-gradient(100.97deg, rgba(13, 13, 14, 0.816) 1.84%, #ffffff9f 102.67%); 
