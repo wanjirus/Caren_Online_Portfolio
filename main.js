@@ -45,12 +45,12 @@ function addStar() {
 }
 Array(1000).fill().forEach(addStar);
 
-const spaceTexture = new THREE.TextureLoader().load("/assets/nasa3.jpg");
+const spaceTexture = new THREE.TextureLoader().load('/nasa3.jpg');
 scene.background = spaceTexture;
 
 // Avatar
 
-const jeffTexture = new THREE.TextureLoader().load('/assets/caro.jpg');
+const jeffTexture = new THREE.TextureLoader().load('/caro.jpg');
 
 const jeff = new THREE.Mesh(new THREE.BoxGeometry(3.5, 3.5, 3.5), new THREE.MeshBasicMaterial({ map: jeffTexture }));
 
@@ -58,8 +58,8 @@ scene.add(jeff);
 
 //moon
 
-const moonTexture= new THREE.TextureLoader().load('./assets/moon.jpg');
- const nolmalTexture= new THREE.TextureLoader().load('./assets/normal.jpg');
+const moonTexture= new THREE.TextureLoader().load('/moon.jpg');
+ const nolmalTexture= new THREE.TextureLoader().load('/normal.jpg');
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32,32),
   new THREE.MeshStandardMaterial({map: moonTexture,
@@ -76,8 +76,8 @@ jeff.position.x = 2;
 
 
 //earth
-const normalTexture= new THREE.TextureLoader().load('./assets/world.jpg');
- const earthTexture= new THREE.TextureLoader().load('./assets/world.jpg');
+const normalTexture= new THREE.TextureLoader().load('/world.jpg');
+ const earthTexture= new THREE.TextureLoader().load('/world.jpg');
 const earth = new THREE.Mesh(
   new THREE.SphereGeometry(3, 40,40),
   new THREE.MeshStandardMaterial({map: earthTexture,
