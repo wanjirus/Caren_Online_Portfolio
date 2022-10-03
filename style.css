@@ -151,7 +151,9 @@ background-origin: padding-box;
 .footer div img{
   height: 50px;
 }
-
+.linkd{
+text-decoration: none;
+}
 .section__footer{
   grid-column: 1 / 13;
     padding: 1rem;
