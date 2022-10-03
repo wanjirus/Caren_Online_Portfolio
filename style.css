@@ -1,0 +1,216 @@
+@import url("https://use.typekit.net/jmk3xov.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  scroll-behavior: smooth;
+}
+
+
+:root {
+  --dark-bg:linear-gradient(100.97deg, rgba(245, 0, 225, 0.329) 1.84%, rgba(0, 81, 255, 0.336) 102.67%); ;
+  --spacing: 200px;
+--color-bg: rgb(66, 233, 16);
+--gradient-footer: linear-gradient(100.97deg, rgba(247, 1, 226, 0.26) 1.84%, rgba(0, 0, 0, 0.624) 102.67%); 
+--gradient-text: linear-gradient(100.97deg, rgba(13, 13, 14, 0.816) 1.84%, #ffffff9f 102.67%); 
+--font-family: 'Manrope', sans-serif;
+
+  font-style: normal;
+}
+
+
+main {
+  width: 100vw;
+  color: white;
+  z-index: 99;
+  position: absolute;
+  width: 100%;
+  margin: 0px auto;
+  padding: 120px 0px;
+  scroll-behavior: smooth;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.name{
+  background-origin: padding-box;
+  display: inline;
+  flex-direction:row;
+  line-height: 75px;
+  letter-spacing: -0.04em;
+  font-style: normal; 
+  color: var(--color-bg);
+   
+}
+h2,blockquote{
+background-origin: padding-box;
+  display: flex;
+  margin: 0%;
+  flex-direction:row;
+  line-height: 75px;
+  letter-spacing: -0.03em;
+  font-style: normal; 
+  color: var(--color-bg);
+  background: var(--gradient-text);
+  background-clip: text; 
+  -webkit-background-clop: text ;
+  -webkit-text-fill-color:  var(--color-bg);
+}
+  
+
+
+  header {
+    background: var(--dark-bg);
+    grid-column: 2 / span 5;
+    font-size: 2.5rem;
+    padding: 2rem;
+    width:fit-content;
+    margin-bottom: var(--spacing);
+  }
+
+  section {
+    grid-column: 2 / 8;
+    padding: 1rem;
+    background: var(--dark-bg);
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin-bottom: var(--spacing);
+  }
+
+  blockquote {
+    margin: 0;
+    padding: 0;
+    grid-column: 2 / span 9;
+    margin-bottom: var(--spacing);
+  }
+
+  blockquote p {
+    color: black;
+    background-color: white;
+    font-size: 4rem;
+    display: inline;
+    line-height: 1;
+  }
+
+  .left {
+    grid-column: 6 / 12;
+  }
+  .gpt3__header-content{
+    flex: 1;
+    display: flex;
+    justify-content: right;
+    align-items: flex-start;
+    flex-direction: column;
+   }
+  
+   .gpt3__header-content p {
+       font-family: var(--font-family);
+       font-style: normal;
+       font-weight: normal;
+       font-size: 20px;
+       line-height: 27px;
+       color: var(--color-text);
+       margin-top: 1.5rem;
+   }
+
+   .container p{
+    color:rgb(148, 255, 27);
+ }
+ h4{
+  color: #ffffff;
+ }
+ .des{ 
+    display:flex;
+    background:black;
+    justify-content:center;
+ }
+ .timeline{
+  color: rgb(63, 252, 5);
+ }
+ .footer{
+  display: flex;
+  flex-direction:row-reverse;
+  flex-wrap: wrap;
+  max-width:max-content;
+  justify-content: center;
+  align-items: center;
+}
+.footer div{
+  flex: 1;
+  max-width: 150px;
+  min-width: 120px;
+
+  margin-left: 1rem;
+  margin-right: 15rem;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+}
+.footer div img{
+  height: 50px;
+}
+
+.section__footer{
+  grid-column: 1 / 13;
+    padding: 1rem;
+    background: var(--gradient-footer);
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin-bottom: var(--spacing);
+}
+
+@media screen and (max-width: 1050px) {
+  .portfolio{
+      flex-direction: column;
+  }
+  .portfolio-content{
+      margin: 0 0 3rem;
+  }
+}
+@media screen and (max-width: 700px) {
+h1{
+  font-size: 48px;
+  line-height: 50px;
+
+}
+h3{
+font-size: 28px;
+  line-height: 50px;
+}
+}
+@media screen and (max-width: 650px) {
+  .portfolio h1,h2{
+      font-size: 48px;
+      line-height: 60px;
+ 
+  
+
+  }
+  h3{
+    font-size: 25px;
+    line-height: 30px;
+  }
+  
+} 
+   @media screen and (max-width: 490px) {
+  .portfolio h1, h2, h3{
+      font-size:16;
+      line-height:40px;
+      }
+      .name h1{
+        font-size: 50px;
+        line-height: 35px;
+      }
+  .portfolio h2, p{
+      font-size: 14px;
+      line-height: 24px;
+      }
+    
+.section__footer,.left,.light{
+  grid-column:1 /13;
+}
+
+
+} 
